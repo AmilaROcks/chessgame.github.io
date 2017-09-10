@@ -1,0 +1,83 @@
+#main{
+    background-color: #122b40;
+    height: 700px;
+    width: 700px;
+}
+.col-xs-1{
+    height: 70px;
+    width: 70px;
+}
+.letter{
+    top: 20px;
+}
+.img{
+    position: absolute;
+    height: 55px;
+    width: 60px;
+    left: 6px;
+    top: 5px;
+    z-index: 9999;
+}
+.img:hover{
+    position: absolute;
+    height: 60px;
+    width: 65px;
+    left: 4px;
+    top: 5px;
+    z-index: 9999;
+}
+#theme{
+    height: 75px;
+    background-color: yellow;
+    color: red;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    border: ridge;
+    border-color: black;
+}
+#scoreboard{
+    height: 700px;
+    width: 335px;
+    background-color: #2aabd2;
+    border: groove;
+    border-color: black;
+}
+#scoreboard1{
+    height: 700px;
+    width: 343px;
+    background-color: #2aabd2;
+    border: groove;
+    border-color: black;
+}
+#score{
+    height: 70px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 35px;
+    font-style: oblique;
+    border-bottom: groove;
+    border-bottom-color: white;
+    border-top: groove;
+    border-top-color: white;
+}
+#score1{
+    height: 70px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 35px;
+    font-style: oblique;
+    border-bottom: groove;
+    border-bottom-color: white;
+    border-top: groove;
+    border-top-color: white;
+}
+.selectpath{
+    box-shadow: inset 0px 0px 6px 10px rgba(50, 233, 59, .8);
+}
+.clickpiece{
+    box-shadow: inset 0px 0px 6px 10px rgba(50, 2, 59, .8);
+}
