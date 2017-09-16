@@ -25,8 +25,6 @@
     left: 4px;
     top: 5px;
     z-index: 9999;
-    box-shadow: inset 0px 0px 6px 10px #28a4c9;
-    transition: box-shadow 0.30s ease-out;
 }
 #theme{
     height: 75px;
@@ -42,51 +40,51 @@
 }
 #scoreboard{
     height: 700px;
-    width: 335px;
+    width: 339px;
     background-color: #1b6d85;
     border: groove;
     border-color: black;
-    opacity: 0.7;
 }
 #scoreboard1{
     height: 700px;
-    width: 343px;
+    width: 339px;
     background-color: #1b6d85;
     border: groove;
     border-color: black;
-    opacity: 0.7;
 }
 #score{
     height: 70px;
     color: white;
     background-color: black;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-style: oblique;
     border-bottom: groove;
     border-bottom-color: white;
     border-top: groove;
     border-top-color: white;
-    opacity: 1;
 }
 #score1{
     height: 70px;
     color: white;
     background-color: black;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-style: oblique;
     border-bottom: groove;
     border-bottom-color: white;
     border-top: groove;
     border-top-color: white;
-    opacity: 1;
+}
+.square:hover{
+    box-shadow: inset 0px 0px 6px 10px #122b40;
+    transition: box-shadow 0.33s ease-out;
 }
 .selectpath{
     box-shadow: inset 0px 0px 6px 10px rgba(50, 345, 59, .8);
 }
 .clickpiece{
-    box-shadow: inset 0px 0px 6px 10px rgba(50, 2, 59, .8);
+    box-shadow: inset 0px 0px 6px 10px #122b40;
 }
 .crosspiece{
     box-shadow: inset 0px 0px 6px 10px #b92c28;
