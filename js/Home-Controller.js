@@ -65,7 +65,11 @@ $(document).ready(function () {
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-$('.chesspieces').on("click",function (eventData) {
+$('.chesspieces').on("click",selectPiece);
+
+
+
+function selectPiece() {
     currentPossition=$(this);
     console.log(currentPossition);
 
@@ -119,7 +123,7 @@ $('.chesspieces').on("click",function (eventData) {
         pathofQueenW(currentPossition);
 
     }
-});
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -193,48 +197,80 @@ function pathofKnight(eventData) {
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId1).children().hasClass('white')){
+        $("#"+tempId1).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId2).children().hasClass('chesspieces'))){
         $("#"+tempId2).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId2).children().hasClass('white')){
+        $("#"+tempId2).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId3).children().hasClass('chesspieces'))){
         $("#"+tempId3).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId3).children().hasClass('white')){
+        $("#"+tempId3).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId4).children().hasClass('chesspieces'))){
         $("#"+tempId4).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId4).children().hasClass('white')){
+        $("#"+tempId4).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId5).children().hasClass('chesspieces'))){
         $("#"+tempId5).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId5).children().hasClass('white')){
+        $("#"+tempId5).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId6).children().hasClass('chesspieces'))){
         $("#"+tempId6).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId6).children().hasClass('white')){
+        $("#"+tempId6).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId7).children().hasClass('chesspieces'))){
         $("#"+tempId7).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId7).children().hasClass('white')){
+        $("#"+tempId7).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId8).children().hasClass('chesspieces'))){
         $("#"+tempId8).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId8).children().hasClass('white')){
+        $("#"+tempId8).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
 }
 
@@ -264,48 +300,80 @@ function pathofKnightW(eventData) {
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId1).children().hasClass('Black')){
+        $("#"+tempId1).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId2).children().hasClass('chesspieces'))){
         $("#"+tempId2).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId2).children().hasClass('Black')){
+        $("#"+tempId2).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId3).children().hasClass('chesspieces'))){
         $("#"+tempId3).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId3).children().hasClass('Black')){
+        $("#"+tempId3).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId4).children().hasClass('chesspieces'))){
         $("#"+tempId4).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId4).children().hasClass('Black')){
+        $("#"+tempId4).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId5).children().hasClass('chesspieces'))){
         $("#"+tempId5).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId5).children().hasClass('Black')){
+        $("#"+tempId5).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId6).children().hasClass('chesspieces'))){
         $("#"+tempId6).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId6).children().hasClass('Black')){
+        $("#"+tempId6).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId7).children().hasClass('chesspieces'))){
         $("#"+tempId7).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId7).children().hasClass('Black')){
+        $("#"+tempId7).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId8).children().hasClass('chesspieces'))){
         $("#"+tempId8).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId8).children().hasClass('Black')){
+        $("#"+tempId8).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -334,48 +402,80 @@ function pathofKing(eventData) {
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId1).children().hasClass('white')){
+        $("#"+tempId1).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId2).children().hasClass('chesspieces'))){
         $("#"+tempId2).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId2).children().hasClass('white')){
+        $("#"+tempId2).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId3).children().hasClass('chesspieces'))){
         $("#"+tempId3).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId3).children().hasClass('white')){
+        $("#"+tempId3).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId4).children().hasClass('chesspieces'))){
         $("#"+tempId4).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId4).children().hasClass('white')){
+        $("#"+tempId4).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId5).children().hasClass('chesspieces'))){
         $("#"+tempId5).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId5).children().hasClass('white')){
+        $("#"+tempId5).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId6).children().hasClass('chesspieces'))){
         $("#"+tempId6).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId6).children().hasClass('white')){
+        $("#"+tempId6).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId7).children().hasClass('chesspieces'))){
         $("#"+tempId7).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId7).children().hasClass('white')){
+        $("#"+tempId7).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId8).children().hasClass('chesspieces'))){
         $("#"+tempId8).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId8).children().hasClass('white')){
+        $("#"+tempId8).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
 }
 
@@ -405,48 +505,80 @@ function pathofKingW(eventData) {
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId1).children().hasClass('Black')){
+        $("#"+tempId1).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId2).children().hasClass('chesspieces'))){
         $("#"+tempId2).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId2).children().hasClass('Black')){
+        $("#"+tempId2).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId3).children().hasClass('chesspieces'))){
         $("#"+tempId3).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId3).children().hasClass('Black')){
+        $("#"+tempId3).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId4).children().hasClass('chesspieces'))){
         $("#"+tempId4).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId4).children().hasClass('Black')){
+        $("#"+tempId4).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId5).children().hasClass('chesspieces'))){
         $("#"+tempId5).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId5).children().hasClass('Black')){
+        $("#"+tempId5).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId6).children().hasClass('chesspieces'))){
         $("#"+tempId6).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId6).children().hasClass('Black')){
+        $("#"+tempId6).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId7).children().hasClass('chesspieces'))){
         $("#"+tempId7).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId7).children().hasClass('Black')){
+        $("#"+tempId7).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
     if (!($("#"+tempId8).children().hasClass('chesspieces'))){
         $("#"+tempId8).addClass('selectpath');
         currentPossition.addClass('clickpiece');
         currentPossition.removeClass('selectpath');
 
+    }else if ($("#"+tempId8).children().hasClass('Black')){
+        $("#"+tempId8).addClass('crosspiece');
+        currentPossition.addClass('clickpiece');
+        currentPossition.removeClass('selectpath');
     }
 }
 
@@ -469,7 +601,12 @@ function pathofRookW(eventData){
         if (!($("#"+tempId).children().hasClass('chesspieces'))){
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }else{
+        }else if ($("#"+tempId).children().hasClass('Black')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
 
@@ -481,7 +618,12 @@ function pathofRookW(eventData){
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
         }
-        else{
+        else if ($("#"+tempId).children().hasClass('Black')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -492,7 +634,12 @@ function pathofRookW(eventData){
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
         }
-        else{
+        else if ($("#"+tempId).children().hasClass('Black')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -502,7 +649,12 @@ function pathofRookW(eventData){
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
         }
-        else{
+        else if ($("#"+tempId).children().hasClass('Black')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -527,7 +679,12 @@ function pathofRook(eventData) {
         if (!($("#"+tempId).children().hasClass('chesspieces'))){
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }else{
+        }else if ($("#"+tempId).children().hasClass('white')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
 
@@ -539,7 +696,12 @@ function pathofRook(eventData) {
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
         }
-        else{
+        else if ($("#"+tempId).children().hasClass('white')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -550,7 +712,12 @@ function pathofRook(eventData) {
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
         }
-        else{
+        else if ($("#"+tempId).children().hasClass('white')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -560,7 +727,12 @@ function pathofRook(eventData) {
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
         }
-        else{
+        else if ($("#"+tempId).children().hasClass('white')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -586,10 +758,15 @@ function pathofBishop(eventData) {
     var y=numArrayPossition
     for (;y<8;y++){
         tempId1=Letters[++x]+numbers[y+1];
-        if (!($("#"+tempId1).children().hasClass('chesspieces'))){
-            $("#"+tempId1).addClass('selectpath');
+        if (!($("#"+tempId1).children().hasClass('chesspieces'))) {
+            $("#" + tempId1).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }else{
+        }else if ($("#"+tempId1).children().hasClass('white')){
+            $("#"+tempId1).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
 
@@ -601,8 +778,12 @@ function pathofBishop(eventData) {
         if (!($("#"+tempId2).children().hasClass('chesspieces'))){
             $("#"+tempId2).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId2).children().hasClass('white')){
+            $("#"+tempId2).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -613,8 +794,12 @@ function pathofBishop(eventData) {
         if (!($("#"+tempId3).children().hasClass('chesspieces'))){
             $("#"+tempId3).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId3).children().hasClass('white')){
+            $("#"+tempId3).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -625,8 +810,12 @@ function pathofBishop(eventData) {
         if (!($("#"+tempId4).children().hasClass('chesspieces'))){
             $("#"+tempId4).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId4).children().hasClass('white')){
+            $("#"+tempId4).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -655,7 +844,12 @@ function pathofBishopW(eventData) {
         if (!($("#"+tempId1).children().hasClass('chesspieces'))){
             $("#"+tempId1).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }else{
+        }else if ($("#"+tempId1).children().hasClass('Black')){
+            $("#"+tempId1).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
 
@@ -667,8 +861,13 @@ function pathofBishopW(eventData) {
         if (!($("#"+tempId2).children().hasClass('chesspieces'))){
             $("#"+tempId2).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+
+        }else if ($("#"+tempId2).children().hasClass('Black')){
+            $("#"+tempId2).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -679,8 +878,12 @@ function pathofBishopW(eventData) {
         if (!($("#"+tempId3).children().hasClass('chesspieces'))){
             $("#"+tempId3).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId3).children().hasClass('Black')){
+            $("#"+tempId3).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -691,8 +894,12 @@ function pathofBishopW(eventData) {
         if (!($("#"+tempId4).children().hasClass('chesspieces'))){
             $("#"+tempId4).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId4).children().hasClass('Black')){
+            $("#"+tempId4).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -720,7 +927,12 @@ function pathofQueen(eventData) {
         if (!($("#"+tempId).children().hasClass('chesspieces'))){
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }else{
+        }else if ($("#"+tempId).children().hasClass('white')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
 
@@ -731,8 +943,12 @@ function pathofQueen(eventData) {
         if (!($("#"+tempId).children().hasClass('chesspieces'))){
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId).children().hasClass('white')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -742,8 +958,12 @@ function pathofQueen(eventData) {
         if (!($("#"+tempId).children().hasClass('chesspieces'))){
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId).children().hasClass('white')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -752,8 +972,12 @@ function pathofQueen(eventData) {
         if (!($("#"+tempId).children().hasClass('chesspieces'))){
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId).children().hasClass('white')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -764,7 +988,12 @@ function pathofQueen(eventData) {
         if (!($("#"+tempId1).children().hasClass('chesspieces'))){
             $("#"+tempId1).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }else{
+        }else if ($("#"+tempId1).children().hasClass('white')){
+            $("#"+tempId1).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
 
@@ -776,8 +1005,12 @@ function pathofQueen(eventData) {
         if (!($("#"+tempId2).children().hasClass('chesspieces'))){
             $("#"+tempId2).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId2).children().hasClass('white')){
+            $("#"+tempId2).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -788,8 +1021,12 @@ function pathofQueen(eventData) {
         if (!($("#"+tempId3).children().hasClass('chesspieces'))){
             $("#"+tempId3).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId3).children().hasClass('white')){
+            $("#"+tempId3).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -800,8 +1037,12 @@ function pathofQueen(eventData) {
         if (!($("#"+tempId4).children().hasClass('chesspieces'))){
             $("#"+tempId4).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId4).children().hasClass('white')){
+            $("#"+tempId4).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -830,7 +1071,12 @@ function pathofQueenW(eventData){
         if (!($("#"+tempId).children().hasClass('chesspieces'))){
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }else{
+        }else if ($("#"+tempId).children().hasClass('Black')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
 
@@ -841,8 +1087,12 @@ function pathofQueenW(eventData){
         if (!($("#"+tempId).children().hasClass('chesspieces'))){
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId).children().hasClass('Black')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -852,8 +1102,12 @@ function pathofQueenW(eventData){
         if (!($("#"+tempId).children().hasClass('chesspieces'))){
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId).children().hasClass('Black')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -862,8 +1116,12 @@ function pathofQueenW(eventData){
         if (!($("#"+tempId).children().hasClass('chesspieces'))){
             $("#"+tempId).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId).children().hasClass('Black')){
+            $("#"+tempId).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -874,7 +1132,12 @@ function pathofQueenW(eventData){
         if (!($("#"+tempId1).children().hasClass('chesspieces'))){
             $("#"+tempId1).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }else{
+        }else if ($("#"+tempId1).children().hasClass('Black')){
+            $("#"+tempId1).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
 
@@ -886,8 +1149,12 @@ function pathofQueenW(eventData){
         if (!($("#"+tempId2).children().hasClass('chesspieces'))){
             $("#"+tempId2).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId2).children().hasClass('Black')){
+            $("#"+tempId2).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -898,8 +1165,12 @@ function pathofQueenW(eventData){
         if (!($("#"+tempId3).children().hasClass('chesspieces'))){
             $("#"+tempId3).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId3).children().hasClass('Black')){
+            $("#"+tempId3).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -910,8 +1181,12 @@ function pathofQueenW(eventData){
         if (!($("#"+tempId4).children().hasClass('chesspieces'))){
             $("#"+tempId4).addClass('selectpath');
             currentPossition.addClass('clickpiece');
-        }
-        else{
+        }else if ($("#"+tempId4).children().hasClass('Black')){
+            $("#"+tempId4).addClass('crosspiece');
+            currentPossition.addClass('clickpiece');
+            currentPossition.removeClass('selectpath');
+            break;
+        }else {
             break;
         }
     }
@@ -1329,8 +1604,8 @@ $(".square").on("click",function (eventData) {
         }
         $(currentSquar).children().remove();
         currentSquar.append(currentpiece);
-        suares.removeClass('selectpath');
         chesspieces.removeClass('clickpiece');
+        suares.removeClass('selectpath');
         suares.removeClass('crosspiece');
     }
 });

@@ -25,6 +25,7 @@
     left: 4px;
     top: 5px;
     z-index: 9999;
+    box-shadow: inset 0px 0px 6px 10px #28a4c9;
 }
 #theme{
     height: 75px;
@@ -36,20 +37,23 @@
     font-weight: bold;
     border: ridge;
     border-color: black;
+    opacity: 0.8;
 }
 #scoreboard{
     height: 700px;
     width: 335px;
-    background-color: #2aabd2;
+    background-color: #1b6d85;
     border: groove;
     border-color: black;
+    opacity: 0.7;
 }
 #scoreboard1{
     height: 700px;
     width: 343px;
-    background-color: #2aabd2;
+    background-color: #1b6d85;
     border: groove;
     border-color: black;
+    opacity: 0.7;
 }
 #score{
     height: 70px;
@@ -62,6 +66,7 @@
     border-bottom-color: white;
     border-top: groove;
     border-top-color: white;
+    opacity: 1;
 }
 #score1{
     height: 70px;
@@ -74,6 +79,7 @@
     border-bottom-color: white;
     border-top: groove;
     border-top-color: white;
+    opacity: 1;
 }
 .selectpath{
     box-shadow: inset 0px 0px 6px 10px rgba(50, 345, 59, .8);
@@ -82,5 +88,5 @@
     box-shadow: inset 0px 0px 6px 10px rgba(50, 2, 59, .8);
 }
 .crosspiece{
-    box-shadow: inset 0px 0px 6px 10px rgba(230, 50, 60, .7);
+    box-shadow: inset 0px 0px 6px 10px #b92c28;
 }
