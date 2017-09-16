@@ -1554,7 +1554,7 @@ function pathofWhitekpond(eventData) {
         }
     }
 }
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////draging and cut pieces/////////////////////////////////////////////////////////////////
 
 var IdW=$("#firstRow").children().first().attr('id');
 var IdB=$("#firstRowB").children().first().attr('id');
@@ -1591,7 +1591,7 @@ $(".square").on("click",function (eventData) {
         var y=$(currentpiece).clone();
         $(currentpiece).remove();
         console.log(IdB);
-        if((currentpiece.hasClass('Black'))){
+        if(currentpiece.hasClass('Black')){
             var x=$(currentSquar).children().clone();
             $(currentSquar).children().remove();
             $("#"+IdW).append(x);
