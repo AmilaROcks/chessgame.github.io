@@ -1576,7 +1576,7 @@ function rotate() {
     }
 }
 
-$(".square").on("click",function (eventData) {
+$(".square").mousedown(function (eventData) {
     var currentSquar=$(this);
     var currentpiece=$(".chesspieces.clickpiece");
     if ($(currentSquar).hasClass('selectpath')) {
@@ -1589,16 +1589,16 @@ $(".square").on("click",function (eventData) {
 
     if ($(currentSquar).hasClass('crosspiece')) {
         var y=$(currentpiece).clone();
-        $(currentpiece).remove();
+        //$(currentpiece).remove();
         console.log(IdB);
         if(currentpiece.hasClass('Black')){
             var x=$(currentSquar).children().clone();
-            $(currentSquar).children().remove();
+            //$(currentSquar).children().remove();
             $("#"+IdW).append(x);
             IdW++;
         }else{
             var x=$(currentSquar).children().clone();
-            $(currentSquar).children().remove();
+            //$(currentSquar).children().remove();
             $("#"+IdB).append(x);
             IdB++;
         }
