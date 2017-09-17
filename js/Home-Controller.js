@@ -1607,6 +1607,7 @@ $(".square").mousedown(function (eventData) {
         chesspieces.removeClass('clickpiece');
         suares.removeClass('selectpath');
         suares.removeClass('crosspiece');
+        rotate();
     }
 });
 
